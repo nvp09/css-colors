@@ -1,1 +1,59 @@
-/* Start coding here */
+:root {
+  color-scheme: light;
+  --bg-top: hsl(240, 100%, 70%);
+  --bg-bottom: hsl(0, 100%, 70%);
+  --card-bg: hsla(0, 50%, 100%, 0.5);
+  --card-text: #3c2c53;
+  --font-base: 'Georgia', 'Times New Roman', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-base);
+  background: linear-gradient(135deg, var(--bg-bottom), var(--bg-top));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  max-width: 420px;
+  padding: 1.75rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(41, 21, 59, 0.25);
+  backdrop-filter: blur(3px);
+}
+
+.card h1 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.card p {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
